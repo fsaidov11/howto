@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const navItems = [
     { to: "/", text: "Главная" },
-    { to: "/roadmaps", text: "Программы" },
+    { to: "/roadmaps", text: "Roadmaps" },
     { to: "/english-test", text: "Тест" },
     { to: "/about-us", text: "О нас" },
     { to: "/contact", text: "Контакты" },

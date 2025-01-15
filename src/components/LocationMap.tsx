@@ -34,7 +34,7 @@ const LocationMap = () => {
               </a>
               
               <a
-                href="https://t.me/howtoschool"
+                href="https://t.me/HowToCorp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-white hover:text-white/80 transition-colors"
