@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Roadmap } from "@/components/Roadmap";
+import Roadmap from "@/components/Roadmap";
 
 const Roadmaps = () => {
   return (

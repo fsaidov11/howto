@@ -1,18 +1,18 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { AboutUs as AboutUsComponent } from "@/components/AboutUs";
+import AboutUs from "@/components/AboutUs";
 
-const AboutUs = () => {
+const AboutUsPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <main className="pt-16">
-        <AboutUsComponent />
+        <AboutUs />
       </main>
       <Footer />
     </div>
   );
 };
 
-export default AboutUs;
+export default AboutUsPage;

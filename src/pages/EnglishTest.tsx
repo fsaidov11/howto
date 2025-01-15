@@ -1,18 +1,18 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { EnglishTest as EnglishTestComponent } from "@/components/EnglishTest";
+import EnglishTest from "@/components/EnglishTest";
 
-const EnglishTest = () => {
+const EnglishTestPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <main className="pt-16">
-        <EnglishTestComponent />
+        <EnglishTest />
       </main>
       <Footer />
     </div>
   );
 };
 
-export default EnglishTest;
+export default EnglishTestPage;
