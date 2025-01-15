@@ -10,17 +10,17 @@ const Footer = () => {
               Контакты
             </h3>
             <div className="space-y-3">
-              <a href="tel:+992000000000" className="flex items-center text-white/80 hover:text-white transition-colors">
+              <a href="tel:+992000556544" className="flex items-center text-white/80 hover:text-white transition-colors">
                 <Phone className="h-5 w-5 mr-2" />
-                <span className="font-montserrat">+992 (00) 000-00-00</span>
+                <span className="font-montserrat">+992 000 55 65 44</span>
               </a>
-              <a href="mailto:info@howto.school" className="flex items-center text-white/80 hover:text-white transition-colors">
+              <a href="mailto:fsaidov11@mail.ru" className="flex items-center text-white/80 hover:text-white transition-colors">
                 <Mail className="h-5 w-5 mr-2" />
-                <span className="font-montserrat">info@howto.school</span>
+                <span className="font-montserrat">fsaidov11@mail.ru</span>
               </a>
               <div className="flex items-center text-white/80">
                 <MapPin className="h-5 w-5 mr-2" />
-                <span className="font-montserrat">ул. Бухоро, 78</span>
+                <span className="font-montserrat">г. Душанбе, ул. Бухоро, 78</span>
               </div>
             </div>
           </div>
@@ -30,10 +30,10 @@ const Footer = () => {
               Социальные сети
             </h3>
             <div className="space-y-3">
-              <a href="https://wa.me/992000000000" className="block text-white/80 hover:text-white transition-colors font-montserrat">
+              <a href="https://wa.me/992000556544" className="block text-white/80 hover:text-white transition-colors font-montserrat">
                 WhatsApp
               </a>
-              <a href="https://t.me/howtoschool" className="block text-white/80 hover:text-white transition-colors font-montserrat">
+              <a href="https://t.me/HowToCorp" className="block text-white/80 hover:text-white transition-colors font-montserrat">
                 Telegram
               </a>
             </div>
@@ -44,9 +44,7 @@ const Footer = () => {
               Режим работы
             </h3>
             <p className="text-white/80 font-montserrat">
-              Пн-Пт: 9:00 - 18:00
-              <br />
-              Сб: 10:00 - 15:00
+              Вт, Чт, Сб: 16:00 - 19:00
               <br />
               Вс: Выходной
             </p>
@@ -55,7 +53,7 @@ const Footer = () => {
         
         <div className="mt-8 pt-8 border-t border-white/10 text-center">
           <p className="text-white/60 font-montserrat">
-            © {new Date().getFullYear()} HowTo.School. Все права защищены.
+            © 2020 HowTo.School. Все права защищены.
           </p>
         </div>
       </div>
