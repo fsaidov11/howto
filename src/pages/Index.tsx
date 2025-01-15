@@ -1,12 +1,13 @@
+import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Roadmap from "@/components/Roadmap";
-import AboutUs from "@/components/AboutUs";
-import ContactForm from "@/components/ContactForm";
-import EnglishTest from "@/components/EnglishTest";
-import LocationMap from "@/components/LocationMap";
-import Testimonials from "@/components/Testimonials";
+import { AboutUs } from "@/components/AboutUs";
+import { ContactForm } from "@/components/ContactForm";
+import { EnglishTest } from "@/components/EnglishTest";
+import { LocationMap } from "@/components/LocationMap";
+import { Testimonials } from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 
 const Index = () => {
