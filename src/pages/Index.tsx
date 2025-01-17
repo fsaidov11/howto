@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Roadmap from "@/components/Roadmap";
 import AboutUs from "@/components/AboutUs";
+import Heroes from "@/components/Heroes";
 import ContactForm from "@/components/ContactForm";
 import EnglishTest from "@/components/EnglishTest";
 import LocationMap from "@/components/LocationMap";
@@ -19,6 +20,7 @@ const Index = () => {
         <Features />
         <Roadmap />
         <AboutUs />
+        <Heroes />
         <EnglishTest />
         <ContactForm />
         <LocationMap />
