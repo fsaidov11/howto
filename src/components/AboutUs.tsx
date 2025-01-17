@@ -36,10 +36,10 @@ const AboutUs = () => {
               className={`
                 bg-gradient-to-br from-background to-background/50 
                 border-white/10 transform transition-all duration-300 
-                hover:scale-105 hover:z-10
+                hover:scale-105 hover:z-10 group
                 ${index === 0 ? 'md:col-span-8 md:row-span-2' : 'md:col-span-6'}
-                ${index === 1 ? 'md:col-start-7 md:-mt-12' : ''}
-                ${index === 2 ? 'md:col-start-4 md:-mt-12' : ''}
+                ${index === 1 ? 'md:col-start-7 md:-mt-24 md:translate-x-4' : ''}
+                ${index === 2 ? 'md:col-start-4 md:-mt-24 md:-translate-x-4' : ''}
               `}
             >
               <CardContent className="p-6 relative">
@@ -52,22 +52,27 @@ const AboutUs = () => {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
                 
-                <h3 className="text-xl font-semibold mb-2 text-white text-center md:text-left">
-                  {member.name}
-                </h3>
-                
-                <p className="text-primary mb-4 text-center md:text-left">
-                  {member.role}
-                </p>
-                
-                <p className="text-white/80 text-center md:text-left">
-                  {member.description}
-                </p>
+                <div className={`
+                  relative z-10 backdrop-blur-sm bg-background/30 p-4 rounded-lg
+                  ${index === 0 ? 'md:w-1/2 md:float-right' : ''}
+                `}>
+                  <h3 className="text-xl font-semibold mb-2 text-white text-center md:text-left">
+                    {member.name}
+                  </h3>
+                  
+                  <p className="text-primary mb-4 text-center md:text-left">
+                    {member.role}
+                  </p>
+                  
+                  <p className="text-white/80 text-center md:text-left">
+                    {member.description}
+                  </p>
+                </div>
               </CardContent>
             </Card>
           ))}
