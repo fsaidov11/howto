@@ -11,10 +11,10 @@ const Hero = () => {
           Индивидуальные курсы по английскому языку и подготовке к тестам: TOEFL, IELTS, SAT, Duolingo
         </p>
         <Button 
-          className="bg-gradient-to-r from-primary to-secondary text-white px-8 py-6 rounded-lg text-lg font-montserrat hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl"
+          className="bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 text-base sm:text-lg rounded-lg font-montserrat hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl"
           onClick={() => window.location.href = '/contact'}
         >
-          Записаться на бесплатную консультацию
+          Записаться
         </Button>
       </div>
     </div>
