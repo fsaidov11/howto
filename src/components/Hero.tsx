@@ -20,7 +20,7 @@ const Hero = () => {
           Записаться
         </Button>
       </div>
-      <div className="mt-16 w-full">
+      <div className="mt-16 w-full max-w-none">
         <LampDemo />
       </div>
     </div>
