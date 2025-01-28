@@ -1,10 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { LampEffect } from "./LampEffect";
+import { LampDemo } from "@/components/ui/lamp";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-background px-4 sm:px-6 lg:px-8">
-      <LampEffect />
+    <div className="relative min-h-screen flex flex-col items-center justify-center bg-background px-4 sm:px-6 lg:px-8">
       <div className="text-center max-w-4xl relative z-10">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 font-montserrat leading-tight">
           HowTo.School — индивидуальный подход к изучению English.
@@ -20,6 +19,9 @@ const Hero = () => {
         >
           Записаться
         </Button>
+      </div>
+      <div className="mt-16 w-full">
+        <LampDemo />
       </div>
     </div>
   );
