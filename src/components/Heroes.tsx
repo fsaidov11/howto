@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -7,7 +8,7 @@ interface Story {
   name: string;
   achievement: string;
   description: string;
-  image?: string;
+  image: string;
   video?: string;
 }
 
@@ -58,13 +59,11 @@ const Heroes = () => {
             >
               <CardContent className="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="relative aspect-video rounded-lg overflow-hidden">
-                  {story.image && (
-                    <img
-                      src={story.image}
-                      alt={story.name}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                  )}
+                  <img
+                    src={story.image}
+                    alt={story.name}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
                   {story.video && (
                     <Button
                       variant="secondary"

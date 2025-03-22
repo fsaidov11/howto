@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -116,59 +117,73 @@ const EnglishTest = () => {
   const progress = ((currentQuestion + 1) / questions.length) * 100;
 
   return (
-      <section className="py-20 px-4" id="test">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-8 text-white">
-            Проверьте свой уровень английского
-          </h2>
+    <section className="py-20 px-4 relative" id="test">
+      <div className="absolute inset-0 w-full h-full z-0 opacity-10">
+        <img 
+          src="/photo-1486312338219-ce68d2c6f44d" 
+          alt="Background" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+      <div className="max-w-3xl mx-auto relative z-10">
+        <h2 className="text-4xl font-bold text-center mb-8 text-white">
+          Проверьте свой уровень английского
+        </h2>
 
-          <Card className="bg-white/5 border-white/10">
-            <CardContent className="p-6">
-              {!showResults ? (
-                  <>
-                    <Progress value={progress} className="mb-8" />
+        <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+          <CardContent className="p-6">
+            {!showResults ? (
+              <>
+                <Progress value={progress} className="mb-8" />
 
-                    <h3 className="text-xl font-semibold mb-6 text-white">
-                      {questions[currentQuestion].question}
-                    </h3>
+                <h3 className="text-xl font-semibold mb-6 text-[#E5DEFF]">
+                  {questions[currentQuestion].question}
+                </h3>
 
-                    <div className="space-y-4">
-                      {questions[currentQuestion].options.map((option, index) => (
-                          <Button
-                              key={index}
-                              variant="outline"
-                              className="w-full justify-start text-left hover:bg-white/10"
-                              onClick={() => handleAnswer(index)}
-                          >
-                            {option}
-                          </Button>
-                      ))}
-                    </div>
-                  </>
-              ) : (
-                  <div className="text-center">
-                    <h3 className="text-2xl font-bold mb-4 text-white">
-                      Ваш результат: {Math.round((score / questions.length) * 100)}%
-                    </h3>
-
-                    <p className="text-white/80 mb-8">
-                      {score > questions.length * 0.7
-                          ? "Отличный результат! Вы готовы к продвинутому уровню."
-                          : "Хороший старт! Давайте улучшим ваши навыки вместе."}
-                    </p>
-
+                <div className="space-y-4">
+                  {questions[currentQuestion].options.map((option, index) => (
                     <Button
-                        className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity"
-                        onClick={() => window.location.href = "#contact"}
+                      key={index}
+                      variant="outline"
+                      className="w-full justify-start text-left hover:bg-white/10 text-[#D3E4FD]"
+                      onClick={() => handleAnswer(index)}
                     >
-                      Записаться на консультацию
+                      {option}
                     </Button>
-                  </div>
-              )}
-            </CardContent>
-          </Card>
-        </div>
-      </section>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <div className="text-center">
+                <img 
+                  src="/photo-1581091226825-a6a2a5aee158" 
+                  alt="Success" 
+                  className="w-32 h-32 rounded-full object-cover mx-auto mb-6 border-2 border-primary"
+                />
+                
+                <h3 className="text-2xl font-bold mb-4 text-[#FDE1D3]">
+                  Ваш результат: {Math.round((score / questions.length) * 100)}%
+                </h3>
+
+                <p className="text-[#F2FCE2] mb-8">
+                  {score > questions.length * 0.7
+                    ? "Отличный результат! Вы готовы к продвинутому уровню."
+                    : "Хороший старт! Давайте улучшим ваши навыки вместе."}
+                </p>
+
+                <Button
+                  className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity"
+                  onClick={() => window.location.href = "#contact"}
+                >
+                  Записаться на консультацию
+                </Button>
+              </div>
+            )}
+          </CardContent>
+        </Card>
+      </div>
+    </section>
   );
 };
 
