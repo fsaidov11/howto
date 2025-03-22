@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Roadmap from "@/components/Roadmap";
+import Pricing from "@/components/Pricing"; // Add import for Pricing
 import AboutUs from "@/components/AboutUs";
 import Heroes from "@/components/Heroes";
 import EnglishTest from "@/components/EnglishTest";
@@ -25,6 +26,9 @@ const Index = () => {
         
         {/* Как это работает - процесс обучения */}
         <Roadmap />
+        
+        {/* Тарифы и цены */}
+        <Pricing />
         
         {/* Истории успеха - доказательство эффективности */}
         <Heroes />

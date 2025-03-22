@@ -1,7 +1,9 @@
+
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Roadmap from "@/components/Roadmap";
+import Pricing from "@/components/Pricing";
 
 const Roadmaps = () => {
   return (
@@ -9,6 +11,7 @@ const Roadmaps = () => {
       <Navbar />
       <main className="pt-16">
         <Roadmap />
+        <Pricing />
       </main>
       <Footer />
     </div>
