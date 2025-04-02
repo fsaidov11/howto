@@ -5,7 +5,7 @@ import { LampDemo } from "@/components/ui/lamp";
 const Hero = () => {
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center bg-background px-4 sm:px-6 lg:px-8">
-      <div className="text-center max-w-4xl relative z-10">
+      <div className="text-center max-w-4xl relative z-20">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 font-montserrat leading-tight">
           HowTo.School — индивидуальный подход к изучению English.
         </h1>
@@ -35,7 +35,7 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      <div className="mt-16 w-full max-w-none">
+      <div className="w-full absolute top-0 left-0 right-0 bottom-0 z-10">
         <LampDemo />
       </div>
     </div>

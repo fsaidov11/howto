@@ -4,10 +4,9 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Roadmap from "@/components/Roadmap";
-import Pricing from "@/components/Pricing"; // Add import for Pricing
+import Pricing from "@/components/Pricing";
 import AboutUs from "@/components/AboutUs";
 import Heroes from "@/components/Heroes";
-import EnglishTest from "@/components/EnglishTest";
 import ContactForm from "@/components/ContactForm";
 import LocationMap from "@/components/LocationMap";
 import Testimonials from "@/components/Testimonials";
@@ -36,9 +35,6 @@ const Index = () => {
         
         {/* О нас - команда */}
         <AboutUs />
-        
-        {/* Тест - вовлечение */}
-        <EnglishTest />
         
         {/* Контакты - призыв к действию */}
         <ContactForm />
