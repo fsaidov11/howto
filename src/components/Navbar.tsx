@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -10,7 +11,8 @@ const Navbar = () => {
   const navItems = [
     { to: "/", text: "Главная" },
     { to: "/roadmaps", text: "Roadmaps" },
-    { to: "/english-test", text: "Тест" },
+    { to: "/english-test", text: "Тест по английскому" },
+    { to: "/math-test", text: "Тест по математике" },
     { to: "/about-us", text: "О нас" },
     { to: "/contact", text: "Контакты" },
   ];
