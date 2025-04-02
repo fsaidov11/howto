@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="relative min-h-screen flex flex-col items-center justify-center bg-background px-4 sm:px-6 lg:px-8">
       <div className="text-center max-w-4xl relative z-20">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 font-montserrat leading-tight">
-          HowTo.School — индивидуальный подход к изучению English.
+          HowTo.School
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl text-white/80 mb-4 font-montserrat">
           Индивидуальные курсы по английскому языку и подготовке к тестам: TOEFL, IELTS, SAT, Duolingo
