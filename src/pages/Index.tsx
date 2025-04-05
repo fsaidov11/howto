@@ -11,6 +11,7 @@ import ContactForm from "@/components/ContactForm";
 import LocationMap from "@/components/LocationMap";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
+import BottomBanner from "@/components/BottomBanner";
 
 const Index = () => {
   return (
@@ -38,6 +39,7 @@ const Index = () => {
         
         {/* Контакты - призыв к действию */}
         <ContactForm />
+        <BottomBanner />
         <LocationMap />
       </main>
       <Footer />
