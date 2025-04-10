@@ -7,31 +7,10 @@ const Hero = () => {
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center bg-background px-4 sm:px-6 lg:px-8">
       <div className="text-center max-w-4xl relative z-20">
-        <motion.h1 
-          className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 font-montserrat leading-tight"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          HowTo.School
-        </motion.h1>
-        <motion.p 
-          className="text-lg sm:text-xl md:text-2xl text-white/90 mb-4 font-montserrat"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          Индивидуальные курсы по английскому языку и подготовке к тестам: TOEFL, IELTS, SAT, Duolingo
-        </motion.p>
-        <motion.p 
-          className="text-base sm:text-lg text-primary/90 mb-8 font-montserrat font-medium"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          Без стресса. Без сложностей. С гарантированным результатом.
-        </motion.p>
-        <motion.div 
+
+
+
+        <motion.div
           className="flex flex-col sm:flex-row justify-center gap-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
