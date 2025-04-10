@@ -14,22 +14,22 @@ interface Story {
 
 const stories: Story[] = [
   {
-    name: "Алексей Иванов",
-    achievement: "TOEFL 112/120",
-    description: "За 3 месяца подготовки достиг желаемого результата и поступил в MIT.",
-    image: "/photo-1649972904349-6e44c42644a7",
+    name: "Ëров Гулмурод",
+    achievement: "TOEFL 111",
+    description: "За 3 месяца подготовки достиг желаемого результата.",
+    image: "/",
   },
   {
-    name: "Мария Петрова",
+    name: "Муродзода Мухаммад",
     achievement: "IELTS 8.0",
-    description: "Получила стипендию в Оксфорде благодаря высокому баллу IELTS.",
-    image: "/photo-1486312338219-ce68d2c6f44d",
+    description: "Получил стипендию в DAAD благодаря высокому баллу IELTS.",
+    image: "/",
     video: "https://example.com/success-story-1.mp4",
   },
   {
-    name: "Дмитрий Смирнов",
-    achievement: "SAT 1550/1600",
-    description: "Поступил в Stanford University с полной стипендией.",
+    name: "Намиг Курбанов",
+    achievement: "SAT 1450",
+    description: "Поступил в KAIST University (South - Korea) с полной стипендией.",
     image: "/photo-1581091226825-a6a2a5aee158",
   },
 ];
