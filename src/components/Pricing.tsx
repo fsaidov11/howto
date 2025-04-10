@@ -31,13 +31,13 @@ const pricingPlans: PricingPlan[] = [
   {
     title: "Платный чат",
     price: "150 сомони/месяц",
-    description: "Задавайте вопросы и получайте быстрые ответы с видеообъяснениями",
+    description: "Задавайте вопросы и получайте быстрые ответы с видео объяснениями",
     features: [
       { name: "Доступ к закрытому чату", included: true, highlight: true },
-      { name: "Видеообъяснение в течение 5 минут", included: true, highlight: true },
-      { name: "1 вопрос в день", included: true },
-      { name: "Личная поддержка от преподавателя", included: true },
+      { name: "Видео объяснение в течение 5 минут", included: true, highlight: true },
+      { name: "1 урок в день", included: true },
       { name: "Доступ к базе знаний", included: true },
+      { name: "Личная поддержка от преподавателя", included: false },
       { name: "Персональный план обучения", included: false },
     ],
     buttonText: "Подписаться",
@@ -45,8 +45,8 @@ const pricingPlans: PricingPlan[] = [
   },
   {
     title: "Индивидуальные онлайн занятия",
-    price: "от 300 сомони/час",
-    description: "Персональные занятия с преподавателем через Zoom/Teams",
+    price: "от 200 сомони/час",
+    description: "Персональные занятия с ментором через Zoom/Teams",
     popular: true,
     features: [
       { name: "Индивидуальная программа", included: true, highlight: true },
@@ -61,15 +61,15 @@ const pricingPlans: PricingPlan[] = [
   },
   {
     title: "Индивидуальные офлайн занятия",
-    price: "от 350 сомони/час",
+    price: "от 250 сомони/час",
     description: "Очные занятия в нашем учебном центре или у вас дома",
     features: [
-      { name: "Личное взаимодействие с преподавателем", included: true, highlight: true },
       { name: "Индивидуальная программа", included: true },
+      { name: "Личное взаимодействие с преподавателем", included: true, highlight: true },
       { name: "Подготовка к экзаменам и тестам", included: true },
       { name: "Интенсивные занятия", included: true },
       { name: "Учебные материалы включены", included: true },
-      { name: "Доступ к закрытому чату", included: false },
+      { name: "Доступ к закрытому чату", included: true },
     ],
     buttonText: "Записаться",
     buttonAction: () => window.location.href = '/contact',
