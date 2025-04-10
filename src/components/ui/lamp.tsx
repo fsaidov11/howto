@@ -15,10 +15,22 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-2xl font-medium tracking-tight text-transparent md:text-4xl"
+        className="mt-8 bg-gradient-to-br from-primary to-secondary py-4 bg-clip-text text-center text-3xl font-bold tracking-tight text-transparent md:text-5xl"
       >
         HowTo.School
       </motion.h1>
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.5,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className="mt-4 text-xl text-white/90 text-center font-medium md:text-2xl"
+      >
+        место где объяснят легко и без воды
+      </motion.p>
     </LampContainer>
   );
 }

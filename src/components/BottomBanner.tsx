@@ -16,9 +16,9 @@ const BottomBanner = () => {
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        HowTo.School — 
+        <span className="text-white">HowTo.School — </span>
         <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-          {" "}индивидуальный подход к изучению English.
+          место где объяснят легко и без воды
         </span>
       </motion.h2>
     </motion.div>
