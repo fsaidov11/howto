@@ -18,19 +18,7 @@ export function LampDemo() {
     }} className="mt-8 bg-gradient-to-br from-primary to-secondary bg-clip-text text-center font-bold tracking-tight md:text-5xl px-0 mx-px my-[51px] py-0 text-6xl text-slate-50">
         HowTo.School
       </motion.h1>
-      <motion.p initial={{
-      opacity: 0,
-      y: 20
-    }} whileInView={{
-      opacity: 1,
-      y: 0
-    }} transition={{
-      delay: 0.5,
-      duration: 0.8,
-      ease: "easeInOut"
-    }} className="mt-4 text-xl text-white/90 text-center font-medium md:text-2xl">
-        место где объяснят легко и без воды
-      </motion.p>
+      
     </LampContainer>;
 }
 export const LampContainer = ({
