@@ -15,9 +15,7 @@ export function LampDemo() {
       delay: 0.3,
       duration: 0.8,
       ease: "easeInOut"
-    }} className="mt-8 bg-gradient-to-br from-primary to-secondary bg-clip-text text-center font-bold tracking-tight md:text-5xl px-0 mx-px my-[51px] py-0 text-6xl text-slate-50">
-        HowTo.School
-      </motion.h1>
+    }} className="mt-8 bg-gradient-to-br from-primary to-secondary bg-clip-text text-center font-bold tracking-tight md:text-5xl px-0 mx-px my-[51px] py-0 text-6xl text-slate-50">HowTo.School</motion.h1>
       
     </LampContainer>;
 }
@@ -60,7 +58,7 @@ export const LampContainer = ({
         backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))`
       }} className="absolute inset-auto left-1/2 h-56 w-[30rem] bg-gradient-conic from-transparent via-transparent to-cyan-500 text-white [--conic-position:from_290deg_at_center_top]">
           <div className="absolute w-40 h-[100%] right-0 bg-background bottom-0 z-20 [mask-image:linear-gradient(to_left,white,transparent)]" />
-          <div className="absolute w-[100%] right-0 bg-background h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" />
+          <div className="absolute w-[100%] right-0 h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)] bg-transparent" />
         </motion.div>
         <div className="absolute top-1/2 h-48 w-full translate-y-12 scale-x-150 bg-background blur-2xl"></div>
         <div className="absolute top-1/2 z-50 h-48 w-full bg-transparent opacity-10 backdrop-blur-md"></div>
