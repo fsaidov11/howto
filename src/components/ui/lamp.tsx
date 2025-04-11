@@ -15,7 +15,7 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br from-primary to-secondary py-4 bg-clip-text text-center text-3xl font-bold tracking-tight text-transparent md:text-5xl"
+        className="mt-8 text-white text-center text-3xl font-bold tracking-tight md:text-5xl"
       >
         HowTo.School
       </motion.h1>
@@ -29,7 +29,7 @@ export function LampDemo() {
         }}
         className="mt-4 text-xl text-white/90 text-center font-medium md:text-2xl"
       >
-        место где объяснят легко и без воды
+        место где легко и без воды
       </motion.p>
     </LampContainer>
   );
@@ -109,7 +109,7 @@ export const LampContainer = ({
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-background"></div>
       </div>
 
-      <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5">
+      <div className="relative z-50 flex -translate-y-64 flex-col items-center px-5">
         {children}
       </div>
     </div>
