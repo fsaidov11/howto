@@ -9,7 +9,7 @@ import { Phone, Mail, MessageSquare, CheckCircle2 } from "lucide-react";
 
 
 const BOT_TOKEN = "7616177823:AAFwcZGo67Fvbbty4SVgqv8bPlKBsH-RD44";
-const CHAT_ID = "1377732777";
+const CHAT_ID = "1007463279";
 const TELEGRAM_API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
 
 // create a dictionary to save value as key and the name of the value on the menu as value
@@ -27,8 +27,8 @@ const ContactForm = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
-    telegram: "",
-    phone: "",
+    telegram: "@",
+    phone: "+992",
     message: "",
     preferredContact: "telegram",
     preferredTime: "",
@@ -42,15 +42,15 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     // check if there is an @ sign in formdata.telegram
-    // if (formData.telegram.includes("@")) {
-    //   formData.telegram = formData.telegram.slice(1);
-    // }
+    if (formData.telegram.includes("@")) {
+      formData.telegram = formData.telegram.slice(1);
+    }
     const message = `
   📝 <strong>Новая заявка с сайта:</strong>
 
   👤 <strong>Имя</strong>: ${formData.name}
   📧 <strong>Email</strong>: ${formData.phone}
-  📱 <strong>Телеграм</strong>: ${formData.telegram}
+  📱 <strong>Телеграм</strong>: @${formData.telegram}
 
   💬 <strong>Сообщение</strong>: ${formData.message}
 
