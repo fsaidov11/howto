@@ -50,7 +50,7 @@ const ContactForm = () => {
 
   👤 <strong>Имя</strong>: ${formData.name}
   📧 <strong>Email</strong>: ${formData.phone}
-  📱 <strong>Телеграм</strong>: @${formData.telegram}
+  📱 <strong>Телеграм</strong>: ${formData.telegram}
 
   💬 <strong>Сообщение</strong>: ${formData.message}
 
