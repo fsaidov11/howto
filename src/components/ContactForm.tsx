@@ -27,8 +27,8 @@ const ContactForm = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
-    telegram: "",
-    phone: "",
+    telegram: "@",
+    phone: "+992",
     message: "",
     preferredContact: "telegram",
     preferredTime: "",
@@ -41,13 +41,16 @@ const ContactForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
+    // check if there is an @ sign in formdata.telegram
+    if (formData.telegram.includes("@")) {
+      formData.telegram = formData.telegram.slice(1);
+    }
     const message = `
   📝 <strong>Новая заявка с сайта:</strong>
 
   👤 <strong>Имя</strong>: ${formData.name}
   📧 <strong>Email</strong>: ${formData.phone}
-  📱 <strong>Телеграм</strong>: ${formData.telegram}
+  📱 <strong>Телеграм</strong>: @${formData.telegram}
 
   💬 <strong>Сообщение</strong>: ${formData.message}
 
