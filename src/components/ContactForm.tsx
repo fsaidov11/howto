@@ -9,7 +9,7 @@ import { Phone, Mail, MessageSquare, CheckCircle2 } from "lucide-react";
 
 
 const BOT_TOKEN = "7616177823:AAFwcZGo67Fvbbty4SVgqv8bPlKBsH-RD44";
-const CHAT_ID = "1007463279";
+const CHAT_ID = "1377732777";
 const TELEGRAM_API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
 
 // create a dictionary to save value as key and the name of the value on the menu as value
