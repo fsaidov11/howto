@@ -12,6 +12,16 @@ const BOT_TOKEN = "7616177823:AAFwcZGo67Fvbbty4SVgqv8bPlKBsH-RD44";
 const CHAT_ID = "1007463279";
 const TELEGRAM_API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
 
+// create a dictionary to save value as key and the name of the value on the menu as value
+const courseNames = {
+  "general": "Индивидуальный английский",
+  "toefl": "Подготовка к TOEFL",
+  "ielts": "Подготовка к IELTS",
+  "math-gap": "Математика! Устранение пробелов",
+  "logic": "Логическая прокачка",
+  "sat": "Математика SAT",
+  "duolingo": "Duolingo English Test",
+};
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -44,7 +54,7 @@ const ContactForm = () => {
   📞 <strong>Способ связи</strong>: ${formData.preferredContact}
   🕒 <strong>Предпочитаемое время</strong>: ${formData.preferredTime}
   
-  📜 <strong>Курс</strong>: ${formData.course}
+  📜 <strong>Курс</strong>: ${courseNames[formData.course]}
 `;
 
     try {
