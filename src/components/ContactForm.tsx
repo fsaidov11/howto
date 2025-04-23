@@ -34,10 +34,17 @@ const ContactForm = () => {
 
     const message = `
   📝 <strong>Новая заявка с сайта:</strong>
+
   👤 <strong>Имя</strong>: ${formData.name}
-  📧 <strong>Email</strong>: ${formData.email}
+  📧 <strong>Email</strong>: ${formData.phone}
   📱 <strong>Телеграм</strong>: ${formData.telegram}
+
   💬 <strong>Сообщение</strong>: ${formData.message}
+
+  📞 <strong>Способ связи</strong>: ${formData.preferredContact}
+  🕒 <strong>Предпочитаемое время</strong>: ${formData.preferredTime}
+  
+  📜 <strong>Курс</strong>: ${formData.course}
 `;
 
     try {
