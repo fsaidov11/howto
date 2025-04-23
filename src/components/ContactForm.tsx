@@ -42,9 +42,9 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     // check if there is an @ sign in formdata.telegram
-    if (formData.telegram.includes("@")) {
-      formData.telegram = formData.telegram.slice(1);
-    }
+    // if (formData.telegram.includes("@")) {
+    //   formData.telegram = formData.telegram.slice(1);
+    // }
     const message = `
   📝 <strong>Новая заявка с сайта:</strong>
 
