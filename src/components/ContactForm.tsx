@@ -7,6 +7,12 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, Mail, MessageSquare, CheckCircle2 } from "lucide-react";
 
+
+const BOT_TOKEN = "7616177823:AAFwcZGo67Fvbbty4SVgqv8bPlKBsH-RD44";
+const CHAT_ID = "1007463279";
+const TELEGRAM_API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+
+
 const ContactForm = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -25,39 +31,41 @@ const ContactForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
+
+    const message = `
+  📝 <strong>Новая заявка с сайта:</strong>
+  👤 <strong>Имя</strong>: ${formData.name}
+  📧 <strong>Email</strong>: ${formData.email}
+  📱 <strong>Телеграм</strong>: ${formData.telegram}
+  💬 <strong>Сообщение</strong>: ${formData.message}
+`;
 
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const response = await fetch(TELEGRAM_API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: CHAT_ID,
+          text: message,
+          parse_mode: "HTML",
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
 
       toast({
         title: "Сообщение отправлено",
         description: "Мы свяжемся с вами в ближайшее время",
       });
-
-      setIsSuccess(true);
-      setFormData({
-        name: "",
-        telegram: "",
-        phone: "",
-        message: "",
-        preferredContact: "telegram",
-        preferredTime: "",
-        agreeToTerms: false,
-        course: "",
-      });
-
-      setTimeout(() => setIsSuccess(false), 3000);
+      
     } catch (error) {
       toast({
-        title: "Ошибка отправки",
-        description: "Пожалуйста, попробуйте снова позже",
-        variant: "destructive",
+        title: "Ошибка",
+        description: "Не удалось отправить заявку. Попробуйте позже"
       });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+    };}
 
   const handleChange = (
       e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
