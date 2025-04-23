@@ -27,8 +27,8 @@ const ContactForm = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
-    telegram: "@",
-    phone: "+992",
+    telegram: "",
+    phone: "",
     message: "",
     preferredContact: "telegram",
     preferredTime: "",
